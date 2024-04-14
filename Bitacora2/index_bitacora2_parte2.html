@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo_bitacora2.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imgs/gatito.jpg" alt="">
+
+        <button id="abrir" class="abrir-menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <ul class="nav-list">
+                <li> <a href="index_bitacora2.html">Flexbox</a></li>
+                <li> <a href="index_bitacora2_parte2.html" class="active">Root</a></li>
+                <li> <a href="index_bitacora2_parte3.html">Tipografia responsiva</a></li>
+                <li> <a href="index_bitacora2_parte4.html">CSS reset y normalize</a></li>
+                <li> <a href="index_bitacora2_parte5.html">Formulario responsivo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="wrapper">
+
+        <article class="main">
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Root</h1>
+                </legend>
+                <p class="texto"> El selector: root coincide con el elemento raíz del documento. Hace referencia al
+                    elemento raíz (al documento HTML). <br>
+                    En la mayoría d ellos casos, :root se refiere al elemento &lthtml&gt en una página web.
+                    Independientemente del lenguaje de marcado, :root siempre seleccionara al elemento superior del
+                    documento. <br>
+
+                    <b>La speudo clase :root puede ser útil para declarar variables CSS globales.</b>
+
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Propiedades personalizadas</h1>
+                </legend>
+                <p class="texto">
+                    <b>Variables CSS</b> <br>
+                    En CSS, las propiedades personalizadas (también conocidas como variables) son entidades que
+                    contienen valores específicos que se pueden volver a utilizar en un documento. <br>
+
+                    Los sitios web complejos tienen cantidades muy grandes de CSS, a menudo con una gran cantidad de
+                    valores repetidos. <br>
+                    Además, las propiedades personalizadas pueden ser animadas, lo que brinda flexibilidad adicional en
+                    la creación de efectos dinámicos en las interfaces web.
+                </p>
+
+            </fieldset>
+
+
+        </article>
+
+        <aside class="aside parte1">
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Variables CSS</h1>
+                </legend>
+                <p class="texto"> <b>flex-direction </b> <br>
+                    Las varables cSS permiten que un valor se almacene en un lugar y luego se haga referencia en varios
+                    otros lugares. <br> <br>
+
+                    <b>Se declara con la siguiente sintaxis: </b><br>
+                    --main-color: red; -- (nombre de la variable) : (valor de la variable) <br>
+                    Y se invoca: <br>
+                    background-color: var (--main color);
+                </p>
+
+            </fieldset>
+
+        </aside>
+
+        <aside class="aside parte2">
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Propiedades personalizadas</h1>
+                </legend>
+                <p class="texto">
+                    Para declarar propiedades personalizadas se debe usar un nombre que comience con dos guiones (--), y
+                    un valor que puede ser cualquier valor valido en CSS. <br>
+                    Es importante el uso de identificadores semánticos. <br>
+                    El alcance (ámbito) en el que podremos usar la variable, dependerá del selector donde se declare la
+                    variable. <br>
+                    <b>Las propiedades personalizadas heredan.</b> <br>
+
+                </p>
+            </fieldset>
+
+        </aside>
+
+        <aside class="img-contenido">
+
+            <img class="extra" src="imgs/flexbox.png" alt="Flexbox">
+
+        </aside>
+
+
+        <aside class="cuacua">
+            <footer class="footer">
+                <img class="gif" src="imgs/cat gatito pc computadora funny.gif" alt="gif-BugCat">
+            </footer>
+        </aside>
+
+    </div>
+
+    <script src="main_bitacora2.js"></script>
+
+</body>
+
+</html>

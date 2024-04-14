@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "nunito";
+    src: url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nunito";
+    font-size: 15px;
+}
+
+/*      Area del header     */
+
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8%;
+    background-color: royalblue;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    max-width: 3rem;
+    border-radius: 50%;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-list li:hover{
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
+.nav-list li a.active {
+    color: salmon; /* Cambia el color del texto de la página activa */
+  }
+
+.nav-list li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-list li a:hover{
+    color: salmon;
+    cursor: pointer;
+}
+
+body{
+    margin-top: 80px;
+    background-color: salmon;
+}
+
+.abrir-menu{
+    display: none;
+}
+
+.cerrar-menu{
+    display: none;
+}
+
+
+
+/*      Areas de texto     */
+
+
+legend{
+    text-align: left;
+    margin-left: 10px;
+    padding: 0 10px;
+    border: 3px solid  honeydew;
+    background-color: powderblue;
+    border-radius: 10px;
+    width: auto;
+    margin-right: 35%;
+}
+
+fieldset{
+    border: 3px solid  honeydew;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo{
+    font-size: 20px;
+}
+
+
+.texto{
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.texto b{
+    font-size: 15px;
+}
+
+/*      Contenido       */
+
+
+.wrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+
+.main {
+    
+    text-align: left;
+    background-color: deepskyblue;
+    height: auto;
+    font-size: 24px;
+    
+}
+
+.parte1{
+    background-color: greenyellow;
+}
+
+.parte2 {
+    background-color: violet;
+}
+
+.img-contenido{
+    background-color: orange;
+}
+
+.extra{
+    border-radius: 10px;
+    border: 3px solid  honeydew;
+    width: 50%;
+}
+
+.cuacua{
+    background-color: honeydew;
+}
+
+.footer {
+    border-radius: 0;
+    margin: 0;
+    margin-top: 10px;
+    height: 100px;
+    padding: 15px 0px;
+}
+
+.gif{
+    height: 100%;
+
+}
+
+
+@media screen and (min-width: 800px){
+    .main{
+        flex: 3;
+    }
+
+    .parte1{
+        order: 1;
+    }
+
+    .parte2{
+        order: 2;
+    }
+
+    .main{
+        order: 2;
+    }
+
+    .img-contenido{
+        order: 4;
+    }
+
+    .cuacua{
+        order: 4;
+    }
+    
+}
+
+@media screen and (min-width: 600px){
+    .aside{
+        flex: 1;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .extra{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    
+    header{
+
+        position: static;
+    }
+
+    body{
+        margin-top: 0;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: azure;
+    }
+
+    .abrir-menu:hover{
+        color: salmon;
+    }
+
+    .cerrar-menu{
+        color: black;
+    }
+
+    .cerrar-menu:hover{
+        color: salmon;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: whitesmoke;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav-list li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    
+}
+
+

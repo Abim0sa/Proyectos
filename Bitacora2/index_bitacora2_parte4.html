@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo_bitacora2.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imgs/gatito.jpg" alt="">
+
+        <button id="abrir" class="abrir-menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <ul class="nav-list">
+                <li> <a href="index_bitacora2.html">Flexbox</a></li>
+                <li> <a href="index_bitacora2_parte2.html">Root</a></li>
+                <li> <a href="index_bitacora2_parte3.html">Tipografia responsiva</a></li>
+                <li> <a href="index_bitacora2_parte4.html" class="active">CSS reset y normalize</a></li>
+                <li> <a href="index_bitacora2_parte5.html">Formulario responsivo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="wrapper">
+
+        <article class="main">
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">CSS Reset y Normalize</h1>
+                </legend>
+                <p class="texto">
+                    <b>CSS Reset: </b> Elimina el estilo predeterminado del navegador para proporcionar una base
+                    consistente en
+                    todos los navegadores. <br> <br>
+                    <b>Normalize: </b> Normaliza los estilos predeterminados de los elementos HTML en todos los
+                    navegadores para
+                    una experiencia más coherente.
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Enfoque y alcance</h1>
+                </legend>
+                <p class="texto">
+                    <b>Reset </b> Aplica estilos mínimos a todos los elementos HTML, reiniciando por completo las reglas
+                    de estilo. <br> <br>
+
+                    <b>Normalize</b> Establece estilos base consistentes para los elementos HTML, manteniendo ciertos
+                    estilos predeterminados que se consideran útiles.
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Uso recomendado</h1>
+                </legend>
+                <p class="texto">
+                    <b>Reset </b> Adecuado para proyectos donde se requiere un control total sobre el diseño y se está
+                    dispuesto a reconstruir estilos desde cero. <br> <br>
+
+                    <b>Normalize</b> Ideal para proyectos donde se prioriza la consistencia entre navegadores y se
+                    prefiere una base más estable para comenzar a trabajar. <br> <br>
+
+                    <b>Complementariedad</b> <br>
+                    Ambos enfoques pueden combinarse según las necesidades del proyecto. Por ejemplo, puedes utilizar
+                    Normalize para establecer una base coherente y luego aplicar un CSS Reset para personalizar los
+                    estilos según tus preferencias específicas.
+
+                </p>
+
+            </fieldset>
+
+
+        </article>
+
+        <aside class="aside parte1">
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Reset </h1>
+                </legend>
+                <p class="texto">
+                    <b>margin, padding, y border: </b> <br>
+                    Se establecen a 0 para todos los elementos, lo que elimina los espacios predeterminados entre
+                    elementos. <br> <br>
+
+                    <b>font-size, line-height, font-family: </b> <br>
+                    A menudo se restablecen para garantizar que no haya estilos heredados. <br> <br>
+
+                    <b>list-style: </b> <br>
+                    Elimina los estilos de viñetas o numeración predeterminados de las listas. <br>
+
+                    Requiere más trabajo para reconstruir estilos desde cero, pero ofrece un control total sobre el
+                    diseño.
+                </p>
+
+            </fieldset>
+
+        </aside>
+
+        <aside class="aside parte2">
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Normalize</h1>
+                </legend>
+                <p class="texto">
+                    <b>box-sizing: </b> <br>
+                    Establece el modelo de caja a border-box, lo que ayuda
+                    a evitar problemas de diseño relacionados con el cálculo del tamaño del elemento. <br> <br>
+
+                    <b>font-weight, font-style: </b> <br>
+                    Normaliza los estilos de fuente para garantizar la consistencia entre navegadores. <br> <br>
+
+                    <b>line-height: </b> <br>
+                    Ajusta el espaciado entre líneas para que sea más consistente entre diferentes elementos de texto.
+                    <br>
+
+                </p>
+
+            </fieldset>
+
+
+        </aside>
+
+
+        <aside class="cuacua">
+            <footer class="footer">
+                <img class="gif" src="imgs/cat gatito pc computadora funny.gif" alt="gif-BugCat">
+            </footer>
+        </aside>
+
+    </div>
+
+    <script src="main_bitacora2.js"></script>
+
+</body>
+
+</html>

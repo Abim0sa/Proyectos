@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo_bitacora2.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imgs/gatito.jpg" alt="">
+
+        <button id="abrir" class="abrir-menu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar">
+                <i class="bi bi-x"></i>
+            </button>
+
+            <ul class="nav-list">
+                <li> <a href="index_bitacora2.html" class="active">Flexbox</a></li>
+                <li> <a href="index_bitacora2_parte2.html">Root</a></li>
+                <li> <a href="index_bitacora2_parte3.html">Tipografia responsiva</a></li>
+                <li> <a href="index_bitacora2_parte4.html">CSS reset y normalize</a></li>
+                <li> <a href="index_bitacora2_parte5.html">Formulario responsivo</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+
+    <div class="wrapper">
+
+        <article class="main">
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Modulo flexbox</h1>
+                </legend>
+                <p class="texto"> El módulo flexbox tiene como objetivo proporcionar una manera más eficiente de
+                    diseñar, alinear y distribuir el espacio entre los elementos en un contenedor, incluso cuando su
+                    tamaño es desconocido y/o dinámico. <br>
+                    Otorga al <b>contenedor</b> la capacidad de modificar al ancho, alto y el orden de sus elementos
+                    para
+                    llenar mejor el espacio disponible. <br>
+                    Un contenedor flexible expande los elementos para llenar el espacio libre disponible o los reduce
+                    para evitar el desbordamiento. El módulo flexbox hace que los elementos dentro de un contenedor
+                    trabajen en un solo eje.
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Contenedor flexible y elementos secundarios</h1>
+                </legend>
+                <p class="texto">
+                    <b>Flexbox</b> en HTML y CSS ofrece un enfoque poderoso para el diseño web, permitiendo la creación
+                    de
+                    diseños responsivos y dinámicos. Al utilizar propiedades como display: flex, flex-direction,
+                    flex-wrap, justify-content, align-items y align-content en los contenedores flexibles, junto con
+                    flex y align-self en los elementos hijos, se puede controlar eficazmente la disposición y el
+                    alineamiento de los elementos en una página web.
+                </p>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Propiedades para el contenedor flexible</h1>
+                </legend>
+                <p class="texto"> <b>align-items</b> <br>
+                    Determina cómo se alinean los elementos verticalmente dentro del contenedor. </p>
+                <p class="texto"> <b>align-content </b> <br>
+                    Esta propiedad alinea los renglones de un contenedor flexible cuando hay espacio extra en el eje
+                    transversal. </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Propiedades para los hijos</h1>
+                </legend>
+                <p class="texto"> <b>flex-basis: auto; </b> <br>
+                    La longitud es igual a la longitud del elemento flexible. </p>
+                <p class="texto"> <b>flex-basis: initial;</b> <br>
+                    Establece esta propiedad a su valor predeterminado.</p>
+                <p class="texto"> <b>flex-basis: numero; </b> <br>
+                    Unidad de longitud, o porcentaje, que especifica la longitud inicial de los elementos flexibles.
+                </p>
+                <p class="texto"> <b>Flex-inherit</b> <br>
+                    Hereda esta propiedad de su elemento padre.
+                </p>
+
+            </fieldset>
+
+        </article>
+
+        <aside class="aside parte1">
+
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Contenedor flexible</h1>
+                </legend>
+                <p class="texto"> <b>flex-direction </b> <br>
+                    Esto establece el eje principal definiendo la dirección en que se colocan los elementos. </p>
+
+                <p class="texto"> <b>flex-wrap </b> <br>
+                    Por defecto todos los elementos intentaran encajar en una sola línea.</p>
+
+                <p class="texto"> <b>flex-flow </b> <br>
+                    Definen los ejes principal y transversal del contenedro flexible. El valor determinado es la row
+                    nowrap. </p>
+
+                <p class="texto"> <b>flex-flow </b> <br>
+                    Definen los ejes principal y transversal del contenedro flexible. El valor determinado es la row
+                    nowrap. </p>
+
+                <p class="texto"> <b>justify-content </b> <br>
+                    Esto define la alineación a lo largo del eje principal.</p>
+
+                <p class="texto"> <b>Gap </b> <br>
+                    Esta propiedad controla el espacio entre elementos flexibles Se aplica ese espacio solo entre
+                    elementos que no están en los bordes exteriores. </p>
+            </fieldset>
+
+        </aside>
+
+        <aside class="aside parte2">
+            <fieldset>
+                <legend>
+                    <h1 class="titulo">Propiedades para los hijos</h1>
+                </legend>
+                <p class="texto"> <b>order</b> <br>
+                    Controla el orden en el que aparecen en el contenedor flexible. </p>
+
+                <p class="texto"> <b>flex-grow </b> <br>
+                    Define la capacidad para que un ítem crezca si es necesario. Acepta un valor entero que sirve como
+                    proporción. Indica que cantidad de espacio disponible disponible dentro del contenedor flexible debe
+                    ocupar el ítem. </p>
+
+                <p class="texto"> <b>flex-shrink </b> <br>
+                    Especifica la capacidad de un elemento para reducir en relación con el resto de los elementos
+                    flexibles del contenedor. Por default es 1. </p>
+
+                <p class="texto"> <b>flex-basis </b> <br>
+                    Esto define el tamaño predeterminado de un elemento antes de distribuir el espacio restante. </p>
+
+                <p class="texto"> <b>align-self</b> <br>
+                    Modifica, alinea solo al elemento especificado.
+                </p>
+
+            </fieldset>
+
+        </aside>
+
+        <aside class="cuacua">
+
+            <footer class="footer">
+                <img class="gif" src="imgs/cat gatito pc computadora funny.gif" alt="gif-BugCat">
+            </footer>
+        </aside>
+
+    </div>
+
+    
+
+    <script src="main_bitacora2.js"></script>
+
+</body>
+
+</html>
